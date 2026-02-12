@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Aditya Mathur</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Open+Sans:wght@400;600;700&display=swap');
+
+        :root {
+            --primary: #2c3e50;
+            --accent: #2980b9;
+            --text: #333;
+            --light-gray: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            font-size: 10pt; /* Optimized for print */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        /* HEADER */
+        header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .header-left h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 24pt;
+            color: var(--primary);
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header-left p {
+            margin: 5px 0 0;
+            font-size: 11pt;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .header-right {
+            text-align: right;
+            font-size: 9pt;
+        }
+
+        .header-right p { margin: 2px 0; }
+        .header-right a { color: var(--text); text-decoration: none; }
+
+        /* SECTIONS */
+        section { margin-bottom: 25px; }
+
+        h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 14pt;
+            color: var(--primary);
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-size: 11pt;
+            font-weight: 700;
+            margin: 0 0 2px 0;
+            color: #000;
+        }
+
+        .sub-title {
+            font-size: 10pt;
+            font-style: italic;
+            color: #555;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            margin: 5px 0 10px 20px;
+            padding: 0;
+        }
+
+        li { margin-bottom: 3px; }
+
+        /* SKILLS GRID */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        /* PRINT SETTINGS */
+        @media print {
+            body { background: #fff; }
+            .container { width: 100%; max-width: none; padding: 0; margin: 0; }
+            @page { margin: 0.5in; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <h1>Aditya Mathur</h1>
+                <p>Electrical & Computer Engineering Student</p>
+            </div>
+            <div class="header-right">
+                <p>Pune, India</p>
+                <p>+91 83769 83243</p>
+                <p><a href="mailto:adityamathur754@gmail.com">adityamathur754@gmail.com</a></p>
+                <p>linkedin.com/in/aditya-mathur</p>
+            </div>
+        </header>
+
+        <section>
+            <h2>Education</h2>
+            <div>
+                <h3>MIT World Peace University</h3>
+                <div class="sub-title">
+                    <span>B.Tech in Electrical and Computer Engineering</span>
+                    <span>Expected May 2027</span>
+                </div>
+            </div>
+            <div style="margin-top: 10px;">
+                <h3>DPS Noida</h3>
+                <div class="sub-title">
+                    <span>High School Diploma (CBSE)</span>
+                    <span>May 2023</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div>
+                    <h3>Languages & Frameworks</h3>
+                    <p>Python, C++, JavaScript (React Native), SQL, Flask, HTML/CSS</p>
+                </div>
+                <div>
+                    <h3>Tools & Hardware</h3>
+                    <p>Arduino, ESP32, SolidWorks, Git/GitHub, Jest, Hardhat</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Key Projects</h2>
+            
+            <h3>NyayAI (Legal Tech Automation)</h3>
+            <ul>
+                <li>Developed a Python-based automation tool to scrutinize legal petitions for formatting compliance.</li>
+                <li>Reduced potential adjournments by identifying documentation errors pre-submission.</li>
+            </ul>
+
+            <h3>Safe Delivery App (Maternity Foundation)</h3>
+            <ul>
+                <li>Contributed to React Native mobile app development for healthcare workers.</li>
+                <li>Implemented Jest testing frameworks to ensure stability and reduce regression bugs.</li>
+            </ul>
+
+            <h3>EV Saksham (Electric Vehicle Design)</h3>
+            <ul>
+                <li>Designed steering assembly and chassis for an EV prototype using SolidWorks.</li>
+                <li>Analyzed vehicle dynamics to optimize turning radius and structural integrity.</li>
+            </ul>
+
+            <h3>Cosmos Observatory</h3>
+            <ul>
+                <li>Led technical operations for telescope calibration and maintenance.</li>
+                <li>Processed raw astrophotography data into high-resolution celestial images.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+            
+            <h3>Maternity Foundation | Intern</h3>
+            <div class="sub-title">
+                <span>Pune, India</span>
+                <span>June 2024 – Aug 2024</span>
+            </div>
+            <ul>
+                <li>Collaborated with cross-functional teams to deploy new app features.</li>
+                <li>Conducted rigorous QA testing to maintain high software quality standards.</li>
+            </ul>
+
+            <h3>Internselite | Software Development Intern</h3>
+            <div class="sub-title">
+                <span>Ghaziabad, India</span>
+                <span>Nov 2023 – Jan 2024</span>
+            </div>
+            <ul>
+                <li>Maintained codebases and optimized application performance.</li>
+                <li>Gained full-cycle SDLC experience in a fast-paced environment.</li>
+            </ul>
+
+            <h3>Edufabrica Pvt. Ltd. | Research Intern</h3>
+            <div class="sub-title">
+                <span>Ghaziabad, India</span>
+                <span>Aug 2023 – Sept 2023</span>
+            </div>
+            <ul>
+                <li>Authored technical reports on astrophysics; synthesized complex data for general audiences.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li><strong>AWS Reforge:</strong> Certificate of Excellence at HACK MIT-WPU 2025.</li>
+                <li><strong>EV Design:</strong> Certified in Electric Vehicle Design & Development (EV SAKSHAM).</li>
+                <li><strong>Industrial Training:</strong> EV Technology at iACE, Gujarat.</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
