@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details | Aditya Mathur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Specific overrides for this page to match the new theme */
+        .detail-header {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .project-block {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow);
+            scroll-margin-top: 100px; /* Prevents navbar covering title */
+        }
+
+        .tags span {
+            display: inline-block;
+            background: var(--bg-alt);
+            color: var(--primary);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            margin-right: 10px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        h1 { font-size: 2rem; margin-bottom: 10px; color: var(--text-main); }
+        h3 { margin-top: 25px; margin-bottom: 15px; color: var(--text-main); font-size: 1.2rem; }
+        p { color: var(--text-muted); line-height: 1.8; }
+        
+        ul { margin-left: 20px; color: var(--text-muted); }
+        li { margin-bottom: 10px; }
+        
+        /* Highlight the target project when clicking from home */
+        .project-block:target {
+            border: 2px solid var(--primary);
+            animation: highlight 1s ease;
+        }
+
+        @keyframes highlight {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="logo">Aditya<span class="dot">.</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Back to Home</a></li>
+                <li><button id="theme-toggle" class="icon-btn"><i class="fas fa-moon"></i></button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container fade-in">
+        
+        <div class="detail-header">
+            <h2 class="section-title" style="margin:0; text-align: left;">Project Deep Dive</h2>
+            <a href="index.html" class="btn btn-outline">&larr; Go Back</a>
+        </div>
+
+        <div id="nyay" class="project-block">
+            <div class="tags"><span>Python</span><span>Automation</span><span>Legal Tech</span></div>
+            <h1>NyayAI: Legal Automation</h1>
+            <p>A specialized software tool designed to streamline the legal scrutiny process.</p>
+            <h3>Key Impact</h3>
+            <ul>
+                <li><strong>Compliance Check:</strong> Automatically scans petitions to ensure they meet legal formatting standards, reducing rejection rates.</li>
+                <li><strong>Time Saving:</strong> Reduces adjournments caused by technical errors in documentation.</li>
+                <li><strong>Tech Stack:</strong> Built using Python for backend logic and document parsing libraries.</li>
+            </ul>
+        </div>
+
+        <div id="maternity" class="project-block">
+            <div class="tags"><span>React Native</span><span>Jest</span><span>Mobile Dev</span></div>
+            <h1>Safe Delivery App</h1>
+            <p>A healthcare application for the Maternity Foundation, designed to assist midwives and health workers.</p>
+            <h3>My Contributions</h3>
+            <ul>
+                <li><strong>Feature Development:</strong> Engineered new interactive modules using React Native to improve user engagement.</li>
+                <li><strong>Testing Framework:</strong> Integrated Jest for rigorous unit testing, reducing crash rates and ensuring stability across devices.</li>
+            </ul>
+        </div>
+
+        <div id="ev" class="project-block">
+            <div class="tags"><span>SolidWorks</span><span>Hardware</span><span>Automotive</span></div>
+            <h1>EV Design & Chassis</h1>
+            <p>An engineering project at TechFusion to build a functional Electric Vehicle prototype.</p>
+            <h3>Engineering Details</h3>
+            <ul>
+                <li><strong>Steering Geometry:</strong> Designed and simulated the steering assembly to optimize the turning radius for city driving.</li>
+                <li><strong>Chassis Fabrication:</strong> Contributed to the structural design using SolidWorks, ensuring a high strength-to-weight ratio.</li>
+            </ul>
+        </div>
+
+        <div id="cosmos" class="project-block">
+            <div class="tags"><span>Astronomy</span><span>Hardware</span><span>Imaging</span></div>
+            <h1>Cosmos Observatory</h1>
+            <p>Technical leadership role at the campus observatory.</p>
+            <h3>Responsibilities</h3>
+            <ul>
+                <li><strong>Hardware Management:</strong> Maintained high-end telescope equipment, ensuring calibration for clear viewing.</li>
+                <li><strong>Data Processing:</strong> Processed raw astronomical data into clear images using stacking and noise reduction techniques.</li>
+            </ul>
+        </div>
+
+        <div id="research" class="project-block">
+            <div class="tags"><span>Research</span><span>Technical Writing</span></div>
+            <h1>Astrophysics Research</h1>
+            <p>Internship at Edufabrica focusing on scientific communication.</p>
+            <h3>Work Overview</h3>
+            <ul>
+                <li><strong>Documentation:</strong> Authored detailed procedures and reports on complex astrophysics topics.</li>
+                <li><strong>Simplification:</strong> Translated dense scientific data into accessible technical documents for broader audiences.</li>
+            </ul>
+        </div>
+
+        <div id="dev" class="project-block">
+            <div class="tags"><span>QA</span><span>Development</span><span>Maintenance</span></div>
+            <h1>Software Development Internship</h1>
+            <p>Full-stack exposure at Internselite.</p>
+            <h3>Key Tasks</h3>
+            <ul>
+                <li><strong>Bug Tracking:</strong> Conducted manual and automated testing to identify critical software bugs.</li>
+                <li><strong>Code Maintenance:</strong> Refactored legacy code to improve performance and readability.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Aditya Mathur. Built with code & curiosity.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
